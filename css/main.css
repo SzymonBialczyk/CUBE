@@ -25,6 +25,7 @@ html body {
 
 section.navbar-fluid {
   position: fixed;
+  top: 0;
   background-color: #fff;
   -webkit-box-shadow: 2px 2px 7px 0px rgba(50, 50, 50, 0.55);
           box-shadow: 2px 2px 7px 0px rgba(50, 50, 50, 0.55);
@@ -41,5 +42,45 @@ section.navbar-fluid div.navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header.header-top-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6rem;
+  height: calc(100vh - 6rem);
+  background-image: -webkit-gradient(linear, left top, right top, from(#3dcdbc), color-stop(#2ac3c0), color-stop(#20b8c2), color-stop(#26acc1), to(#33a1bd));
+  background-image: linear-gradient(to right, #3dcdbc, #2ac3c0, #20b8c2, #26acc1, #33a1bd);
+}
+
+header.header-top-fluid .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header.header-top-fluid .container div:nth-child(2) {
+  padding-left: 4rem;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+}
+
+header.header-top-fluid .container div:nth-child(2) h2 {
+  margin: 0 0 2rem 0;
+  font-size: 4rem;
+  font-weight: 200;
+}
+
+header.header-top-fluid .container div:nth-child(2) p {
+  margin: 0 0 2rem 0;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 /*# sourceMappingURL=main.css.map */
