@@ -1,0 +1,13 @@
+section.navbar-fluid{
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 2px 2px 7px 0px rgba(50, 50, 50, 0.55);
+
+    div.navbar{
+        height: 6rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+}
