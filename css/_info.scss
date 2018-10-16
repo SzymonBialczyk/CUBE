@@ -1,0 +1,12 @@
+div.info {
+    display: flex;
+justify-content: space-around;
+    >article {
+        box-sizing: border-box;
+        width: 30%;
+        box-shadow: 2px 2px 42px -3px rgba(112,112,112,1);
+        background-color: gold;
+        padding: 2rem;
+        // dodac iknoy fonty i inne gowna
+    }
+}
