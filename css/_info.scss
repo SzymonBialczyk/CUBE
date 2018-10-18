@@ -1,12 +1,34 @@
+section.info-fluid{
+height: 40rem;
+
 div.info {
     display: flex;
 justify-content: space-around;
+
     >article {
+        font-family: 'Raleway', sans-serif;
         box-sizing: border-box;
         width: 30%;
-        box-shadow: 2px 2px 42px -3px rgba(112,112,112,1);
-        background-color: gold;
+        box-shadow: 1px 1px 42px -7px rgba(112,112,112,1);
+        background-color: white;
         padding: 2rem;
-        // dodac iknoy fonty i inne gowna
+        transition: 0.4s;
+
+        h3{
+           
+            }
+            font-size: 1.6rem;
+                font-weight: 400;
+        }
+        p{
+            font-size: 1.4rem;
+                font-weight: 100;
+                line-height: 1.7;
+        }
+        
     }
+}
+article:hover{
+    transform: translateY(10rem);
+    
 }
