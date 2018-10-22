@@ -23,6 +23,14 @@ html body {
   display: none;
 }
 
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot?53015172");
+  src: url("../font/fontello.eot?53015172#iefix") format("embedded-opentype"), url("../font/fontello.woff2?53015172") format("woff2"), url("../font/fontello.woff?53015172") format("woff"), url("../font/fontello.ttf?53015172") format("truetype"), url("../font/fontello.svg?53015172#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 section.navbar-fluid {
   position: fixed;
   top: 0;
@@ -159,7 +167,7 @@ section.intro-fluid div.info div.przycisk > a > span {
 }
 
 section.info-fluid {
-  height: 40rem;
+  height: 50rem;
 }
 
 section.info-fluid div.info {
@@ -181,17 +189,25 @@ section.info-fluid div.info > article {
   padding: 2rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  font-size: 1.6rem;
+}
+
+section.info-fluid div.info > article h3 {
+  font-size: 2rem;
   font-weight: 400;
 }
 
-section.info-fluid div.info p {
+section.info-fluid div.info > article h3 span {
+  font-family: 'fontello';
+  font-size: 3rem;
+}
+
+section.info-fluid div.info > article p {
   font-size: 1.4rem;
   font-weight: 100;
   line-height: 1.7;
 }
 
-article:hover {
+section.info-fluid article:hover {
   -webkit-transform: translateY(10rem);
           transform: translateY(10rem);
 }
@@ -286,5 +302,100 @@ div.opinie div:nth-child(7) {
 
 div.opinie div:nth-child(8) {
   width: 40%;
+}
+
+section.products-fluid {
+  height: 100rem;
+}
+
+section.products-fluid div.intro {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+section.products-fluid div.intro h3 {
+  font-size: 5rem;
+  font-weight: 200;
+}
+
+section.products-fluid div.intro p {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+section.products-fluid div.caly {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.products-fluid div.caly div.lewo div.jeden {
+  background-color: #e4c285;
+  margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+  height: 30rem;
+  width: 40rem;
+}
+
+section.products-fluid div.caly div.lewo div.dwa {
+  margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+  background-color: #a5a5a5;
+  height: 30rem;
+  width: 40rem;
+}
+
+section.products-fluid div.caly div.srodek {
+  margin: 1.5rem 0 1.5rem 0;
+  height: 61.5rem;
+  width: 40rem;
+  background-color: #d8d8d8;
+}
+
+section.products-fluid div.caly div.prawo div.trzy {
+  margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+  background-color: #c7fd81;
+  height: 30rem;
+  width: 40rem;
+}
+
+section.products-fluid div.caly div.prawo div.cztery {
+  margin: 1.5rem 1.5rem 1.5rem 1.5rem;
+  background-color: #50b44d;
+  height: 30rem;
+  width: 40rem;
+}
+
+div.przycisk {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.przycisk > a {
+  display: inline-block;
+  width: 20rem;
+  height: 6rem;
+  background-color: #00FFA3;
+  text-decoration: none;
+  color: #239C71;
+  -webkit-box-shadow: 0px 0px 26px 2px rgba(115, 109, 115, 0.46);
+          box-shadow: 0px 0px 26px 2px rgba(115, 109, 115, 0.46);
+}
+
+div.przycisk > a > span {
+  font-weight: bold;
+  line-height: 6rem;
+  font-size: 1.4rem;
+  display: block;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

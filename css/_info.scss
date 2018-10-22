@@ -1,5 +1,6 @@
+
 section.info-fluid{
-height: 40rem;
+height: 50rem;
 
 div.info {
     display: flex;
@@ -14,21 +15,24 @@ justify-content: space-around;
         padding: 2rem;
         transition: 0.4s;
 
-        h3{
+        h3{font-size: 2rem;
+            font-weight: 400;
+           span{
+               font-family: 'fontello';
+               font-size: 3rem;           }
            
-            }
-            font-size: 1.6rem;
-                font-weight: 400;
-        }
+            } 
+        
         p{
             font-size: 1.4rem;
                 font-weight: 100;
                 line-height: 1.7;
         }
+    }
+    }
+    article:hover{
+        transform: translateY(10rem);
         
     }
 }
-article:hover{
-    transform: translateY(10rem);
-    
-}
+
