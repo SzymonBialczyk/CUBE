@@ -29,6 +29,22 @@ header.header-top-fluid {
                 font-size: 1.6rem;
                 font-weight: 400;
             }
+            div{
+                
+                a{  font-weight: 400;
+                     display: inline-block;
+                    background-color: #fff;
+                height: 5rem;
+                width: 15rem;
+                text-decoration: none;
+             color: #26acc1;
+             font-size: 1.1rem;
+             text-align: center;
+             line-height: 5rem;
+
+                }
+
+            }
         }
     }
 }

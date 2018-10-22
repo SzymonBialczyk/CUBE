@@ -84,6 +84,19 @@ header.header-top-fluid .container div:nth-child(2) p {
   font-weight: 400;
 }
 
+header.header-top-fluid .container div:nth-child(2) div a {
+  font-weight: 400;
+  display: inline-block;
+  background-color: #fff;
+  height: 5rem;
+  width: 15rem;
+  text-decoration: none;
+  color: #26acc1;
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 5rem;
+}
+
 section.container-fluid div.clients {
   background-color: #f6f6f6;
   display: -webkit-box;
@@ -168,24 +181,17 @@ section.info-fluid div.info > article {
   padding: 2rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-}
-
-section.info-fluid div.info > article h3 {
   font-size: 1.6rem;
   font-weight: 400;
 }
 
-section.info-fluid div.info > article h3 svg {
-  width: 20px;
-}
-
-section.info-fluid div.info > article p {
+section.info-fluid div.info p {
   font-size: 1.4rem;
   font-weight: 100;
   line-height: 1.7;
 }
 
-section.info-fluid article:hover {
+article:hover {
   -webkit-transform: translateY(10rem);
           transform: translateY(10rem);
 }
