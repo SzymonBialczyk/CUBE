@@ -52,6 +52,52 @@ section.navbar-fluid div.navbar {
           align-items: center;
 }
 
+section.navbar-fluid div.navbar nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  height: 6rem;
+  width: 52rem;
+}
+
+section.navbar-fluid div.navbar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section.navbar-fluid div.navbar nav ul li:first-child {
+  margin-left: 0;
+}
+
+section.navbar-fluid div.navbar nav ul li:last-child {
+  margin-right: 0;
+}
+
+section.navbar-fluid div.navbar nav ul li {
+  display: inline-block;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+section.navbar-fluid div.navbar nav ul li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+section.navbar-fluid div.navbar nav ul li a.green {
+  color: #1dcac7;
+}
+
 header.header-top-fluid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -476,6 +522,9 @@ section.koniec div.jeden div.guzik > a > span {
 }
 
 section.koniec div.links {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -503,7 +552,7 @@ section.koniec div.links div.cube p {
   word-wrap: normal;
 }
 
-section.koniec div.zielone {
+section.koniec div.links div.zielone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,8 +561,70 @@ section.koniec div.zielone {
       -ms-flex-direction: column;
           flex-direction: column;
   text-decoration: none;
-  color: #00f597 ul;
-  color-display: inline-block;
-  color-flex-direction: column;
+}
+
+section.koniec div.links div.zielone ul {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  list-style: none;
+  display: inline-block;
+}
+
+section.koniec div.links div.zielone ul a {
+  text-decoration: none;
+  color: #08cca2;
+}
+
+section.koniec div.links div.kontakt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+}
+
+section.koniec div.links div.kontakt ul {
+  margin: 0;
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  list-style: none;
+  display: inline-block;
+}
+
+section.koniec div.links div.kontakt ul p {
+  text-decoration: none;
+  color: #08cca2;
+}
+
+footer {
+  background-color: #1d1d1d;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  color: #a0a0a0;
+  font-size: 1.8rem;
+  margin: 1rem;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #08cca2;
 }
 /*# sourceMappingURL=main.css.map */
