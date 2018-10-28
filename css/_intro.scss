@@ -1,5 +1,6 @@
 section.intro-fluid{
     div.info{
+        margin-top: 3rem;
         height: 33rem;
         display: flex;
         justify-content: center;
@@ -7,17 +8,20 @@ section.intro-fluid{
         flex-direction: column;
         font-family: 'Raleway', sans-serif;
         h2{
-            font-size: 3.5rem;
+           margin-bottom: 0;
+            font-size: 5rem;
                 font-weight: 300;
                 
         }
         p{
-            font-size: 1.8rem;
+            font-size: 2rem;
                 font-weight: 200;
                 text-align: center
         }
         div.przycisk{
             >a { 
+                margin-right: calc(50vw - 10rem);
+                margin-bottom: 5rem;
                 display: inline-block;
                 width: 20rem;
                 height: 6rem;

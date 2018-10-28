@@ -1,6 +1,7 @@
 section.products-fluid {
     height: 100rem;
-
+    display: flex;
+    flex-direction: column;
     div.intro {
         font-family: 'Raleway', sans-serif;
         text-align: center;
@@ -8,6 +9,7 @@ section.products-fluid {
         h3 {
             font-size: 5rem;
             font-weight: 200;
+            margin-bottom: 2rem;
         }
 
         p {
@@ -68,10 +70,15 @@ section.products-fluid {
 }
 
 div.przycisk {
+    justify-content: center;
     align-items: center;
+    margin-left: calc(50vw - 10rem ) ;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+    
 
     >a {
-        display: inline-block;
+        display: block;
         width: 20rem;
         height: 6rem;
         background-color: #00FFA3;

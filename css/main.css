@@ -119,6 +119,7 @@ section.container-fluid div.clients {
 }
 
 section.intro-fluid div.info {
+  margin-top: 3rem;
   height: 33rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,17 +138,20 @@ section.intro-fluid div.info {
 }
 
 section.intro-fluid div.info h2 {
-  font-size: 3.5rem;
+  margin-bottom: 0;
+  font-size: 5rem;
   font-weight: 300;
 }
 
 section.intro-fluid div.info p {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 200;
   text-align: center;
 }
 
 section.intro-fluid div.info div.przycisk > a {
+  margin-right: calc(50vw - 10rem);
+  margin-bottom: 5rem;
   display: inline-block;
   width: 20rem;
   height: 6rem;
@@ -236,76 +240,84 @@ div.button > a:hover span {
           transform: translateY(-10rem);
 }
 
-div.wstep {
+section.opinie {
+  background-color: #f6f6f6;
+  height: calc(100vh - 6rem);
+  font-family: 'Raleway', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-div.opinie {
+section.opinie div.opinie {
+  top: 15rem;
+}
+
+section.opinie div.opinie h3 {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+
+section.opinie div.opinie p {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+section.opinie div.zbior {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-div.opinie div:nth-child(1) {
-  height: 5rem;
-  width: 5rem;
-  background-color: red;
+section.opinie div.zbior div.tekst {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5rem;
+}
+
+section.opinie div.zbior article {
+  width: 40rem;
+  line-height: 3rem;
+  margin-left: 5rem;
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+section.opinie div.zbior div.kula {
+  height: 10rem;
+  width: 10rem;
+  background-color: #61359b;
   border-radius: 50%;
-}
-
-div.opinie div:nth-child(2) {
-  width: 40%;
-}
-
-div.opinie div:nth-child(3) {
-  height: 5rem;
-  width: 5rem;
-  background-color: #0400ff;
-  border-radius: 50%;
-}
-
-div.opinie div:nth-child(4) {
-  width: 40%;
-}
-
-div.opinie div:nth-child(5) {
-  height: 5rem;
-  width: 5rem;
-  background-color: #33ff00;
-  border-radius: 50%;
-}
-
-div.opinie div:nth-child(6) {
-  width: 40%;
-}
-
-div.opinie div:nth-child(7) {
-  height: 5rem;
-  width: 5rem;
-  background-color: #030000;
-  border-radius: 50%;
-}
-
-div.opinie div:nth-child(8) {
-  width: 40%;
 }
 
 section.products-fluid {
   height: 100rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 section.products-fluid div.intro {
@@ -316,6 +328,7 @@ section.products-fluid div.intro {
 section.products-fluid div.intro h3 {
   font-size: 5rem;
   font-weight: 200;
+  margin-bottom: 2rem;
 }
 
 section.products-fluid div.intro p {
@@ -375,13 +388,19 @@ section.products-fluid div.caly div.prawo div.cztery {
 }
 
 div.przycisk {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: calc(50vw - 10rem);
+  margin-top: 6rem;
+  margin-bottom: 5rem;
 }
 
 div.przycisk > a {
-  display: inline-block;
+  display: block;
   width: 20rem;
   height: 6rem;
   background-color: #00FFA3;
@@ -397,5 +416,104 @@ div.przycisk > a > span {
   font-size: 1.4rem;
   display: block;
   text-align: center;
+}
+
+section.koniec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 75vh;
+  background-color: #444444;
+  font-family: 'Raleway', sans-serif;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.koniec div.jeden {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15rem;
+}
+
+section.koniec div.jeden h3 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 100;
+  color: white;
+}
+
+section.koniec div.jeden div.guzik {
+  width: 18rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.koniec div.jeden div.guzik > a {
+  display: inline-block;
+  width: 18rem;
+  height: 5rem;
+  background-color: #444444;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+}
+
+section.koniec div.jeden div.guzik > a > span {
+  font-weight: 400;
+  line-height: 5rem;
+  font-size: 1.8rem;
+  display: block;
+  text-align: center;
+}
+
+section.koniec div.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: 'Raleway', sans-serif;
+}
+
+section.koniec div.links div.cube {
+  width: 20vw;
+}
+
+section.koniec div.links div.cube h3 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+section.koniec div.links div.cube p {
+  color: #a0a0a0;
+  font-size: 1.6rem;
+  word-wrap: normal;
+}
+
+section.koniec div.zielone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  color: #00f597 ul;
+  color-display: inline-block;
+  color-flex-direction: column;
 }
 /*# sourceMappingURL=main.css.map */
